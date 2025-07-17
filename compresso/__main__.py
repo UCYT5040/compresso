@@ -8,7 +8,6 @@ def compresso():
     pass
 
 
-# NEW CODE:
 compress_command = click.Command('compress',
                                  callback=compress,
                                  params=[
@@ -20,7 +19,7 @@ compress_command = click.Command('compress',
                                      click.Option(['--worker-timeout', '-t'], type=int, default=None,
                                                   help='Timeout for worker threads in seconds.'),
                                      click.Option(['--max-rounds', '-r'], type=int, default=None,
-                                                    help='Maximum number of compression rounds to perform.')
+                                                  help='Maximum number of compression rounds to perform.')
                                  ])
 decompress_command = click.Command('decompress',
                                    callback=decompress,
