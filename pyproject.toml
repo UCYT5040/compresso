@@ -1,0 +1,11 @@
+[project]
+name = "compresso"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "brotli>=1.1.0",
+    "click>=8.2.1",
+    "pytest>=8.4.1",
+    "zstandard>=0.23.0",
+]
