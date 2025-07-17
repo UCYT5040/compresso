@@ -19,7 +19,7 @@ compress_command = click.Command('compress',
                                      click.Option(['--worker-timeout', '-t'], type=int, default=None,
                                                   help='Timeout for worker threads in seconds.'),
                                      click.Option(['--max-rounds', '-r'], type=int, default=None,
-                                                  help='Maximum number of compression rounds to perform.')
+                                                  help='Maximum number of compression rounds to perform.'),
                                      click.Option(['--verbose', '-v'], is_flag=True, default=False,
                                                   help='Enable verbose logging.')
                                  ])
