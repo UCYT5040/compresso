@@ -22,6 +22,14 @@ Compress a file using the Compresso format.
 - `--worker-timeout <n>`: Timeout in seconds for each worker (default: no timeout).
 - `--max-rounds <n>`: Maximum number of rounds to perform (default: unlimited).
 
+### `compresso decompress <file>`
+
+Decompress a Compresso file.
+
+#### Options
+
+- `--output <file>` (`-o`): Specify an output file.
+
 ## Speed
 
 Compresso can be slow for large files.
