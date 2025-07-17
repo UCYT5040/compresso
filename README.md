@@ -21,6 +21,7 @@ Compress a file using the Compresso format.
 - `--num-threads <n>`: Number of threads to use for compression (default: depends on CPU)
 - `--worker-timeout <n>`: Timeout in seconds for each worker (default: no timeout).
 - `--max-rounds <n>`: Maximum number of rounds to perform (default: unlimited).
+- `--verbose` (`-v`): Enable verbose logging.
 
 ### `compresso decompress <file>`
 
@@ -29,6 +30,7 @@ Decompress a Compresso file.
 #### Options
 
 - `--output <file>` (`-o`): Specify an output file.
+- `--verbose` (`-v`): Enable verbose logging.
 
 ## Speed
 

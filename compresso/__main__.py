@@ -20,11 +20,17 @@ compress_command = click.Command('compress',
                                                   help='Timeout for worker threads in seconds.'),
                                      click.Option(['--max-rounds', '-r'], type=int, default=None,
                                                   help='Maximum number of compression rounds to perform.')
+                                     click.Option(['--verbose', '-v'], is_flag=True, default=False,
+                                                  help='Enable verbose logging.')
                                  ])
 decompress_command = click.Command('decompress',
                                    callback=decompress,
                                    params=[
-                                       click.Argument(['filename'], type=click.Path(exists=True))
+                                       click.Argument(['filename'], type=click.Path(exists=True)),
+                                       click.Option(['--output', '-o'], type=click.Path(), default=None,
+                                                    help='Output file for decompressed data.'),
+                                       click.Option(['--verbose', '-v'], is_flag=True, default=False,
+                                                    help='Enable verbose logging.')
                                    ])
 compresso.add_command(compress_command)
 compresso.add_command(decompress_command)
